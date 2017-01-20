@@ -9,9 +9,9 @@ the appropriate options.
 
 ### Requirements
 
-o Python
-o python module pyfasta
-o additional files (see, e.g., http://archive.broadinstitute.org/mpg/birdsuite/birdseed.html)
+* Python
+* python module pyfasta
+* additional files (see, e.g., http://archive.broadinstitute.org/mpg/birdsuite/birdseed.html)
 
 
 ### Summary
