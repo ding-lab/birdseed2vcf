@@ -38,7 +38,7 @@ import commands
 
 # --Global variables--
 # set substrings for searching column headers
-sStr = ['Aliquot Barcode', 'associated_entities__entity_submitter_id']
+sStr = ['Aliquot Barcode', 'associated_entities__entity_submitter_id', 'Hybridization Name']
 #sStr = ['Aliquot UUID', 'associated_entities__entity_submitter_id']
 
 version = "1.2-DL1"
