@@ -436,8 +436,11 @@ if __name__ == "__main__":
         if args.add_chr:
             chromosome = "chr" + chromosome
 
-        if not args.dont_convert_MT_to_M and chromosome == "chrMT":
-            chromosome = "chrM"
+        if not args.dont_convert_MT_to_M:
+            if chromosome == "chrMT":
+                chromosome = "chrM"
+            if chromosome == "MT":
+                chromosome = "M"
 
         ref_fasta = fasta[chromosome][position-1].upper()
 
