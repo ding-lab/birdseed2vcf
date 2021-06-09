@@ -183,7 +183,7 @@ def vcf_header(file_hd,sample):
 figure out the call string
 '''
 def create_call(allele_a,allele_b,reference,call):
-    if reference != allele_a and reference != allele_b:
+    if reference != allele_a and reference != allele_b:  #Chen SHH: for triallele?
         if call == "0":
             return "1/1"
         elif call == "1":
@@ -198,11 +198,15 @@ def create_call(allele_a,allele_b,reference,call):
                 return "1/1"
             else:
                 return "0/0"
-        else:
+        elif call == "0": #else:   #Chen SHH: modified on 20201/2/4 
             if reference.upper() == allele_a.upper():
                 return "0/0"
             else:
                 return "1/1"
+        elif call == "-1":  #Chen SHH: modified on 20201/2/4
+            return "./."
+        else:
+            pass
 '''
 change up the call, based on if we're reversed stranded or not
 '''
